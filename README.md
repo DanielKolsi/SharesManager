@@ -2,8 +2,6 @@ SharesManager - V 1.0 - Daniel Kolsi - kolsi.daniel@gmail.com (C)
 
 ## INTRODUCTION
 
-
-
 The purpose of this Java program is to display a classified report of share
 entities. The report consists of different parts which are: 
  - a report of amount of USD settled incoming everyday (for each day, not total!)
@@ -12,7 +10,6 @@ entities. The report consists of different parts which are:
    at the top of the list (ranked first) 
  - all entities (not on daily basis!) ranked based on outgoing amount, highest 
    at the top of the list (ranked first)
-
 
 ## Installation and running the program
 
@@ -28,7 +25,16 @@ folder for importing this project to Eclipse.
 I developed and executed the program from Eclipse Neon (4.6.2).
 No external jars besides JUnit 4 are required (junit.jar)
     
-      
+## The solution in a nutshell 
+
+The solution prints an entity income and outgoing report, newest date first, where entity income
+or outgoing daily trade amounts are summed up. This is followed by a rank report of entities (income and
+outgoing separated), ranked according to their settlement trade amount, highest amount having the
+Rank 1.
+
+The solution ensures that the settlement is adjusted to a next working day if it happens to be on holiday. 
+The work week depends on the currency, i.e. if the currency is AED or SAR, the workweek is from Sunday to Thursday, 
+otherwise it's from Monday to Friday.
 
 ## Made assumptions  
 
@@ -40,7 +46,7 @@ are made mostly due to the interpretation of the assignment text. In real life
 situation some clarification from the customer would have been asked to further 
 progress within the solution. 
 
-	- Assumption 1: Settled date 
+	 Assumption 1: Settled date 
 
 I made the assumption that the settled date can be initially on a "holiday", that is,
 in that case it needs to be changed to be the next working day (+ 1-2 days). (Before
@@ -48,20 +54,20 @@ checking the sample dates from my Calendar, I thought that the instructed date w
 actually the initial settled date that becomes the settled date if it's a working day,
 and if not, then the days are added. But the sample date proved that this cannot be the case.)     
  
-	- Assumption 2: "settled incoming everyday"
+	 Assumption 2: "settled incoming everyday"
 
 I found this expression confusing. I was wondering whether this meant total settled incoming or
 settled incoming (after possible working day correction!) for each day. I made the assumption that
 the latter is more rational for the report, as it's probably more meaningful to see daily amounts summed up 
 than all "historic" settled amounts summed up. 
  
-	- Assumption 3: Entity information printed in the report
+	 Assumption 3: Entity information printed in the report
  
  As the instruction wasn't very specific what entity information should be in the report, I selected:
  Rank, Entity id, Amount of trade (daily) and Settlement date
  More information could have been easily added based on the given input entity data.
  
-	- Assumption 4: Used time for the test
+	 Assumption 4: Used time for the test
 
 The exam was instructed to be done in "three hours or so...". I found it difficult or even impossible to 
 reach "production quality" code within this time limit. Especially, when it took time figuring out what
@@ -110,7 +116,7 @@ Rank:3 | Entity id: entity6 | Amount of trade: 7245.0 | Settlement date: 08 Mar 
 ```
 
 ## Code folder and package structure
-
+```java 
  folder: SharesManager/src/com/sharesmanager/main (package com.sharesmanager.main)
  		   - Entity.java  			(class)
  		   - EntityManager.java	    (interface)
@@ -122,7 +128,7 @@ Rank:3 | Entity id: entity6 | Amount of trade: 7245.0 | Settlement date: 08 Mar 
 Comparator and Comparable are used for sorting both displayed report date order
 (newest date first) and settlement trade amount / day (highest amount first).  		  
  		  
-
+```
 ## About unit tests
 
 Due to the pretty simple nature of the assignment, all unit tests are located 
@@ -130,8 +136,8 @@ in one class called TestEntityManagerImpl.java
 
 It consists of 6 different unit test cases (methods) which test the basic functionality of the
 program including:
-  - checking the correctness of some Entity fields
-  - checking the processing of sample entity data and ensuring it's correctly
+ - checking the correctness of some Entity fields
+ - checking the processing of sample entity data and ensuring it's correctly
     divided between S's and B's (income and outgoing flags)
  - check that the settlement is adjusted correctly as for a working day
    if the currency is AED or SGP (requires two and one days to be added)   
