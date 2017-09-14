@@ -4,7 +4,7 @@ SharesManager - V 1.0 - Daniel Kolsi - kolsi.daniel@gmail.com (C)
 
 
 
-The purpose of this Java program is to display classified report of share
+The purpose of this Java program is to display a classified report of share
 entities. The report consists of different parts which are: 
  - a report of amount of USD settled incoming everyday (for each day, not total!)
  - a report of amount of USD settled out coming everyday (for each day, not total!)
@@ -40,7 +40,7 @@ are made mostly due to the interpretation of the assignment text. In real life
 situation some clarification from the customer would have been asked to further 
 progress within the solution. 
 
-# Assumption 1: Settled date 
+- Assumption 1: Settled date 
 
 I made the assumption that the settled date can be initially on a "holiday", that is,
 in that case it needs to be changed to be the next working day (+ 1-2 days). (Before
@@ -48,20 +48,20 @@ checking the sample dates from my Calendar, I thought that the instructed date w
 actually the initial settled date that becomes the settled date if it's a working day,
 and if not, then the days are added. But the sample date proved that this cannot be the case.)     
  
-# Assumption 2: "settled incoming everyday"
+- Assumption 2: "settled incoming everyday"
 
 I found this expression confusing. I was wondering whether this meant total settled incoming or
 settled incoming (after possible working day correction!) for each day. I made the assumption that
 the latter is more rational for the report, as it's probably more meaningful to see daily amounts summed up 
 than all "historic" settled amounts summed up. 
  
-# Assumption 3: Entity information printed in the report
+- Assumption 3: Entity information printed in the report
  
  As the instruction wasn't very specific what entity information should be in the report, I selected:
  Rank, Entity id, Amount of trade (daily) and Settlement date
  More information could have been easily added based on the given input entity data.
  
-# Assumption 4: Used time for the test
+- Assumption 4: Used time for the test
 
 The exam was instructed to be done in "three hours or so...". I found it difficult or even impossible to 
 reach "production quality" code within this time limit. Especially, when it took time figuring out what
