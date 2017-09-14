@@ -1,7 +1,7 @@
 SharesManager - V 1.0 - Daniel Kolsi - kolsi.daniel@gmail.com (C)
-==============================================================================
-Introduction
-==============================================================================
+
+1. Introduction
+
 
 The purpose of this Java program is to display classified report of share
 entities. The report consists of different parts which are: 
@@ -12,9 +12,9 @@ entities. The report consists of different parts which are:
  - all entities (not on daily basis!) ranked based on outgoing amount, highest 
    at the top of the list (ranked first)
 
-==============================================================================
-Installation and running the program
-==============================================================================
+
+2. Installation and running the program
+
 To run and test the program Java Standard Edition (SE) Runtime environment 8 is 
 required. Testing and running should be done by executing the unit tests as
 it also displays the required report. All data is populated within the unit
@@ -24,9 +24,9 @@ I developed and executed the program from Eclipse Neon (4.6.2).
 No external jars besides JUnit 4 are required (junit.jar)
     
       
-==============================================================================   
- Made assumptions  
-==============================================================================
+
+3. Made assumptions  
+
 
 The technical solution was restricted by both time limit and other 
 limits (e.g. only 1-2 external .jars) given in the assignment. The solution
@@ -67,9 +67,9 @@ as it wasn't supposed that more than one working day is used for the exam. Anywa
 and made assumptions any given moment :)
 
  
-===============================================================================   
- Example report  
-===============================================================================
+
+4. Example report  
+
 
  Below is an example report which shows all data displayed (From 7 sample Entities).
  The Income and Outgoing settlement dates are ordered by newest date first. Rank
@@ -106,9 +106,9 @@ Rank:3 | Entity id: entity6 | Amount of trade: 7245.0 | Settlement date: 08 Mar 
 
 **** END OF THE REPORT ****
 
-===============================================================================   
- Code folder and package structure
-===============================================================================
+
+5. Code folder and package structure
+
  folder: SharesManager/src/com/sharesmanager/main (package com.sharesmanager.main)
  		   - Entity.java  			(class)
  		   - EntityManager.java	    (interface)
@@ -120,9 +120,9 @@ Rank:3 | Entity id: entity6 | Amount of trade: 7245.0 | Settlement date: 08 Mar 
 Comparator and Comparable are used for sorting both displayed report date order
 (newest date first) and settlement trade amount / day (highest amount first).  		  
  		  
-===============================================================================   
- About unit tests
-===============================================================================
+
+6. About unit tests
+
 Due to the pretty simple nature of the assignment, all unit tests are located 
 in one class called TestEntityManagerImpl.java
 
@@ -136,9 +136,9 @@ program including:
  - test that both income and outgoing daily trade amount sum is calculated correctly
  - test both income and outgoing record entity order (higher settled trade amount first)
 
-==============================================================================   
- How to improve this solution?
-===============================================================================
+
+ 7. How to improve this solution?
+
 The current solution should function correctly and give a correct report, but to
 decrease the likelihood of bugs larger sample data should be generated and 
 more unit test cases added. This is a matter of time...
