@@ -1,6 +1,6 @@
 SharesManager - V 1.0 - Daniel Kolsi - kolsi.daniel@gmail.com (C)
 
-1. Introduction
+1. INTRODUCTION
 ---------------
 
 
@@ -15,6 +15,7 @@ entities. The report consists of different parts which are:
 
 
 2. Installation and running the program
+---------------
 
 To run and test the program Java Standard Edition (SE) Runtime environment 8 is 
 required. Testing and running should be done by executing the unit tests as
@@ -25,9 +26,9 @@ I developed and executed the program from Eclipse Neon (4.6.2).
 No external jars besides JUnit 4 are required (junit.jar)
     
       
-
+---------------
 3. Made assumptions  
-
+---------------
 
 The technical solution was restricted by both time limit and other 
 limits (e.g. only 1-2 external .jars) given in the assignment. The solution
@@ -68,8 +69,9 @@ as it wasn't supposed that more than one working day is used for the exam. Anywa
 and made assumptions any given moment :)
 
  
-
-4. Example report  
+---------------
+4. Example report 
+---------------
 
 
  Below is an example report which shows all data displayed (From 7 sample Entities).
