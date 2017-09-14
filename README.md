@@ -1,6 +1,7 @@
 SharesManager - V 1.0 - Daniel Kolsi - kolsi.daniel@gmail.com (C)
 
 1. Introduction
+===============
 
 
 The purpose of this Java program is to display classified report of share
