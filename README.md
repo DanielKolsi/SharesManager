@@ -77,7 +77,7 @@ and made assumptions any given moment :)
  The Income and Outgoing settlement dates are ordered by newest date first. Rank
  is based the amount of trade. Technically the ordering is done by using Java's 
  Comparable and Comparator strategy design patterns within Collections.sort(). 
- 
+```java 
  **** BEGINNING OF THE REPORT ****
 
 $$$$$ ENTITY INCOME REPORT $$$$$ 
@@ -107,7 +107,7 @@ Rank:2 | Entity id: foo | Amount of trade: 10025.0 | Settlement date: 04 Jan 201
 Rank:3 | Entity id: entity6 | Amount of trade: 7245.0 | Settlement date: 08 Mar 2017
 
 **** END OF THE REPORT ****
-
+```
 
 ## Code folder and package structure
 
