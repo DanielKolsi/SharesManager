@@ -22,6 +22,9 @@ required. Testing and running should be done by executing the unit tests as
 it also displays the required report. All data is populated within the unit
 test's @BeforeClass init method. (No specific main method was added.)
 
+.project and .classpath files are provided in the SharesManager/SharesManager
+folder for importing this project to Eclipse.
+
 I developed and executed the program from Eclipse Neon (4.6.2).
 No external jars besides JUnit 4 are required (junit.jar)
     
